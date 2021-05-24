@@ -1,0 +1,8 @@
+﻿<div *ngIf="loaded">
+    <h2>Changing recipe data</h2>
+    <recipe-form [(recipe)]="recipe"></recipe-form>
+    <div class="form-group">
+        <button class="btn btn-sm btn-success" (click)="save()">Save</button>
+        <button class="btn btn-sm btn-primary" routerLink="/">Back to list</button>
+    </div>
+</div>

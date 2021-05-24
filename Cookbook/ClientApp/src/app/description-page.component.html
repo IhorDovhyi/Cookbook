@@ -1,0 +1,8 @@
+﻿<div *ngIf="loaded">
+    <h2>{{recipe.name}} description</h2>
+    <div>
+        {{recipe.description}}
+    </div>
+</div>
+<button class="btn btn-sm btn-warning" (click)="edit()">Edit</button>
+<button class="btn btn-sm btn-primary" routerLink="/">Back to list</button>

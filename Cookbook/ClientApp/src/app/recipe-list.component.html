@@ -1,0 +1,7 @@
+﻿<h1>Recipe book</h1>
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <a class="navbar-brand" routerLink="">Home</a>
+    <a class="navbar-brand" routerLink="/create">Add recipe</a>
+</nav>
+<recipe-child-list (onChanged)="onChanged($event)" [(recipes)]="recipes"></recipe-child-list>
+

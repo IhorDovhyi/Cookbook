@@ -1,0 +1,25 @@
+﻿<ng-container *ngIf="loaded">
+    <div>
+        <h2>{{recipe.name}} history</h2>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <td>Date</td>
+                <td>Name</td>
+                <td>Description</td>
+                <td>Child</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let r of recipe.recipeHistory">
+                <td>{{r?.date | date:'yyyy-MM-dd HH:mm:ss'}}</td>
+                <td>{{r?.name}}</td>
+                <td>{{r?.description}}</td>
+                <td>{{r?.child}}</td>
+            </tr>
+        </tbody>
+    </table>   
+</ng-container> 
+<button class="btn btn-sm btn-primary" routerLink="/">Back to list</button>
